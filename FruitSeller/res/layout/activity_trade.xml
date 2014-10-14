@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/cn.sgone.fruitseller"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+    
+    <include
+        layout="@layout/view_title_main"
+        android:focusable="true" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/btn_success" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="抢单成功！"
+            android:textSize="19sp"
+            android:textColor="@color/red_txt" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:stretchColumns="2" >
+            <TableRow
+                android:gravity="center_vertical"
+                android:minHeight="35dp"
+                android:weightSum="4" >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="送货时间"
+                    android:textColor="@color/gray" />
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="10:00-12:00"
+                    android:textColor="@color/gray" />
+            </TableRow>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_line" />
+            <TableRow
+                android:gravity="center_vertical"
+                android:minHeight="35dp"
+                android:weightSum="4" >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="送货地址"
+                    android:textColor="@color/gray" />
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="上海浦东海浦东上海浦东海浦东上海浦东海浦东上海浦东海浦东上海浦东海浦东上海浦东海浦东" />
+            </TableRow>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_line" />
+            <TableRow
+                android:gravity="center_vertical"
+                android:minHeight="35dp"
+                android:weightSum="4" >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="联系电话"
+                    android:textColor="@color/gray" />
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="1282938927" />
+            </TableRow>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_line" />
+            <TableRow
+                android:gravity="center_vertical"
+                android:minHeight="40dp"
+                android:weightSum="4" >
+	               <RelativeLayout 
+			        android:layout_width="80dp"
+			        android:layout_height="40dp"
+			        android:layout_marginLeft="10dp">
+			        <ImageView
+			        android:id="@+id/soundImg"
+			        android:layout_width="wrap_content"
+			        android:layout_height="match_parent"
+			        android:scaleType="fitStart"
+			        android:src="@drawable/btn_voice" />
+			        <TextView 
+			            android:id="@+id/voice_length"
+			            android:layout_width="wrap_content"
+			        	android:layout_height="wrap_content"
+			        	android:layout_centerInParent="true"
+			        	android:textColor="@color/white"
+			        	android:text="4"
+	           		 />
+   		 		</RelativeLayout>
+            </TableRow>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_line" />
+            <TableRow
+                android:gravity="center_vertical"
+                android:minHeight="80dp"
+                android:weightSum="4" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:minHeight="35dp"
+                    android:layout_gravity="top"
+                    android:text="提  醒"
+                    android:textColor="@color/green_txt"
+                    android:textSize="20sp" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/call_area"
+        android:layout_marginTop="-40dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        >
+        <com.robin.fruitseller.view.RingView
+	        android:id="@+id/ring"
+	        android_custom:style="FILL"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android_custom:roundColor="@color/white"
+	        android_custom:middleColor="@color/green_light"
+	        android_custom:roundProgressColor="@color/white"
+	        android_custom:textColor="@color/white"
+	        android_custom:roundWidth="5dip"
+	        android_custom:textSize="18sp" />
+        <ImageView 
+            android:layout_width="40dp"
+        	android:layout_height="40dp"
+        	android:layout_centerInParent="true"
+        	android:src="@drawable/tel_s1"
+            />
+    </RelativeLayout>
+    
+
+</LinearLayout>

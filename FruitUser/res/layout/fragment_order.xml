@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/brand_tap_bar_bg"
+                android:paddingBottom="5dip"
+                android:paddingTop="10dip" >
+
+                <TextView
+                    android:id="@+id/tv_tab_all"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="即买订单"
+                    android:textColor="@color/bg_tab_text_selected"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_tab_dis"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="团购订单"
+                    android:textColor="@color/bg_tab_text"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/brand_tap_bar_select_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="0dip" >
+
+                <ImageView
+                    android:id="@+id/iv_bottom_line"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleType="matrix"
+                    android:src="@drawable/brand_tap_bar_select_color" >
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/iv_bottom_line1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleType="matrix" >
+                </ImageView>
+            </LinearLayout>
+        </LinearLayout>
+        
+        <android.support.v4.view.ViewPager
+	        android:id="@+id/pager"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+        />
+    </LinearLayout>

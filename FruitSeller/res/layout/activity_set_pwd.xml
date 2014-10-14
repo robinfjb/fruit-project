@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+    
+    <include
+        layout="@layout/view_title_pwd"
+        android:focusable="true" />
+    
+    <EditText 
+        android:id="@+id/old_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:minHeight="30dp"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:background="@color/white"
+        android:hint="原密码"
+        />
+    
+    <EditText 
+        android:id="@+id/new_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:minHeight="30dp"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:background="@color/white"
+        android:hint="新密码"
+        />
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_hint"
+        />
+    <EditText 
+        android:id="@+id/confirm_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:minHeight="30dp"
+        android:inputType="textPassword"
+        android:background="@color/white"
+        android:hint="确认密码"
+        />
+
+</LinearLayout>

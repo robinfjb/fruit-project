@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" 
+    android:background="#252525">
+
+    <Button
+        android:id="@+id/record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="按住开始录音" />
+
+    <Button
+        android:id="@+id/player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="播放录音" />
+        
+    <TextView android:id="@+id/luyin_time"
+        	  android:layout_width="wrap_content"
+        	  android:layout_height="wrap_content"
+        	  android:textColor="#ffffff"
+        	  android:textSize="15dp"
+        	  android:layout_marginTop="10dp"/>
+        	  
+   <TextView android:id="@+id/luyin_path"
+        	  android:layout_width="wrap_content"
+        	  android:layout_height="wrap_content"
+        	  android:textColor="#ffffff"
+        	  android:textSize="15dp"
+        	  android:layout_marginTop="10dp"/>
+
+</LinearLayout>

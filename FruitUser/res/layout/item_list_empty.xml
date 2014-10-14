@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/itemsEmptyListView"
+        style="@style/TextListFooter"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/selector_list_item_bg"
+        android:gravity="center"
+        android:text="对不起，没有新的内容！" />
+
+    <LinearLayout
+        android:id="@+id/footer_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/view_title_fav_shop"
+        android:focusable="true" />
+    
+    <TextView 
+        android:id="@+id/all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:minHeight="35dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:text="全部"
+        android:paddingLeft="15dp"
+        />
+
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:text="邻居推荐"
+        android:textColor="@color/gray_hint"
+        android:paddingLeft="15dp"
+        />
+    <ListView
+        android:id="@+id/list_neigbor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/gray_edit"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent"
+        android:paddingLeft="15dp" />
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:text="常用水果店"
+        android:textColor="@color/gray_hint"
+        android:paddingLeft="15dp"
+        />
+    <ListView
+        android:id="@+id/list_fav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/gray_edit"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent"
+        android:paddingLeft="15dp" />
+
+    <!-- <Button
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_button_green"
+        android:text="确定"
+        android:textColor="@color/white" /> -->
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:text="您一旦选择了单一水果店为您服务，其他水果店将无法收到您的订单！"
+        android:textColor="@color/gray_line"
+        android:textSize="14sp"
+        />
+
+</LinearLayout>

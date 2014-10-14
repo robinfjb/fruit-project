@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">水果1号商家</string>
+
+    <string name="photo_take">拍照</string>
+    <string name="photo_album">从相册选择</string>
+    
+    <string name="error_upload">上传失败</string>
+    <string name="error_sdcard">请插入SD卡并获取权限</string>
+    <string name="error_atleast_one">至少选择一张照片</string>
+    <string name="error_only_one">只能选择一张照片</string>
+    <string name="error_qiangdan">抢单失败</string>
+    <string name="error_latlon">解析不到，请换个地址重试</string>
+    <string name="error_27">错误27</string>
+    <string name="error_32">key错误</string>
+    <string name="error_unknow">未知错误</string>
+    <string name="error_empty_phone">电话号码为空</string>
+    <string name="warn_empty_phone">请输入手机号</string>
+    <string name="warn_empty_code">请输入验证码</string>
+    <string name="warn_empty_pwd">请输入密码</string>
+    <string name="warn_empty_address">请输入地址</string>
+    <string name="warn_empty_photo">请上传照片</string>
+    <string name="warn_empty_name">请输入名字</string>
+    <string name="warn_empty_number">请输入号码</string>
+    <string name="warn_empty_pwd_old">请输入完整</string>
+    <string name="warn_pwd_old">原密码不正确</string>
+    <string name="warn_empty_pwd_new">两次输入密码不一致</string>
+    <string name="warn_empty_pwd_new_old">新密码不能与原密码一致</string>
+    <string name="quit">再按一次退出</string>
+    <string name="success_forget_pwd">取回密码成功</string>
+    <string name="update_photo">请上传图片</string>
+    <string name="app_update_msg">发现新版本，是否去升级？</string>
+    <string name="app_update_title">版本提示</string>
+    <string name="app_update_warn">已是最新版本</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    
+    <string name="order_1">用户已下单</string>
+    <string name="order_2">商家已接单</string>
+    <string name="order_3">订单结束</string>
+    <string name="order_4">订单取消</string>
+    <string name="order_5">订单被拒绝</string>
+    
+    <string name="user_cancel">用户已取消订单</string>
+    <string name="notify_title">你有一条新信息</string>
+    
+    <string name="user_type_1">抢单</string>
+    <string name="user_type_2">已被抢</string>
+    <string name="user_type_3">已结束</string>
+    <string name="user_type_4">已取消</string>
+    <string name="user_type_5">已拒绝</string>
+    
+    <string name="register_success">提交成功，请等待审核</string>
+</resources>

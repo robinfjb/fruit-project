@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/view_title_order_detail"
+        android:focusable="true" />
+
+    <RelativeLayout 
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+        <ImageView
+        android:id="@+id/btn_voice_play"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scaleType="fitStart"
+        android:src="@drawable/btn_voice" />
+        <TextView 
+            android:id="@+id/voice_length"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_centerInParent="true"
+        	android:textColor="@color/white"
+        	android:text="4"
+            />
+    </RelativeLayout>
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="35dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:weightSum="5" >
+        
+        <TextView
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2"
+	        android:textColor="@color/gray"
+	        android:text="配送地址" />
+
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间的话"
+            android:layout_weight="3"
+            android:textColor="@color/gray" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/gray_edit"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent"
+        android:paddingLeft="15dp" />
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_button_green"
+        android:minHeight="40dp"
+        android:text="发送订单"
+        android:textColor="@color/white" />
+
+</LinearLayout>

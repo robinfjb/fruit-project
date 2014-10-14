@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Title"
+        android:layout_gravity="center_horizontal"
+        android:text="注册"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="10dp"
+    	android:layout_marginRight="10dp"
+    	android:src="@drawable/step3"
+        />
+    
+    <ImageView
+        android:id="@+id/bigImg"
+        android:layout_width="300dp"
+    	android:layout_height="205dp"
+    	android:scaleType="fitStart"
+    	android:layout_gravity="center_horizontal"
+    	android:layout_marginTop="20dp"
+    	android:layout_marginLeft="10dp"
+    	android:layout_marginRight="10dp"
+    	android:src="@drawable/bigimg"
+        />
+    
+    <TextView 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center_horizontal"
+    	android:layout_marginTop="10dp"
+    	android:background="@drawable/recangel_green"
+    	android:text="营业执照:上传"
+    	android:textColor="@color/green_txt"
+    	android:paddingTop="5dp"
+    	android:paddingBottom="5dp"
+    	android:paddingLeft="15dp"
+    	android:paddingRight="15dp"
+        />
+    
+    <Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button_green"
+        android:text="提交审核"
+        android:textColor="@color/white" />
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="提示语："
+        android:textColor="@color/gray"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我们将会在24小时内通过您的审核，请耐心等待！"
+        android:textColor="@color/gray"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+</LinearLayout>

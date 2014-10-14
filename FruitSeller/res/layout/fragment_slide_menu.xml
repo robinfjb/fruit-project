@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background" >
+
+    <LinearLayout
+        android:id="@+id/userInfoArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/headImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:adjustViewBounds="true"
+            android:maxHeight="60dip"
+            android:maxWidth="60dip"
+            android:src="@drawable/meunheader" />
+
+        <TextView
+            android:id="@+id/fav_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的账户"
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userInfoArea"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/dealLayout"
+            layout="@layout/item_order" />
+
+        <include
+            android:id="@+id/accountLayout"
+            layout="@layout/item_account" />
+
+        <include
+            android:id="@+id/announceLayout"
+            layout="@layout/item_announce" />
+
+        <include
+            android:id="@+id/helpLayout"
+            layout="@layout/item_help" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <TextView
+                android:id="@+id/btn_product"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="left|center_vertical"
+                android:text="提意见"
+                android:textColor="@drawable/text_color_red_gray" />
+
+            <LinearLayout
+                android:id="@+id/btn_setting"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right"
+                    android:gravity="right|center_vertical"
+                    android:src="@drawable/meunset" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:text="设置"
+                    android:textColor="@drawable/text_color_red_gray" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

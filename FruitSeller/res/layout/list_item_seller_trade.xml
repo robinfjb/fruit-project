@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/cn.sgone.fruitseller"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="120dp"
+    android:paddingBottom="2dp"
+    android:paddingTop="2dp" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       	android:background="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="40dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:stretchColumns="2" >
+
+        <TableRow
+            android:gravity="center_vertical"
+            android:minHeight="35dp"
+            android:weightSum="4" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="送货时间:"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="10:00-12:00"
+                android:textColor="@color/gray" />
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginRight="40dp"
+            android:background="@color/gray_line" />
+
+        <TableRow
+            android:gravity="center_vertical"
+            android:minHeight="35dp"
+            android:weightSum="4" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="送货地址:"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="上海浦东海浦东上海浦东海浦东上海浦东海浦东上海浦东海浦东上海浦东海浦东上海浦东海浦东" />
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginRight="40dp"
+            android:background="@color/gray_line" />
+
+        <TableRow
+            android:gravity="center_vertical"
+            android:minHeight="40dp"
+            android:weightSum="4" >
+
+            <RelativeLayout 
+		        android:layout_width="80dp"
+		        android:layout_height="40dp"
+		        android:layout_marginLeft="10dp">
+		        <ImageView
+		        android:id="@+id/soundImg"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:scaleType="fitStart"
+		        android:src="@drawable/btn_voice" />
+		        <TextView 
+		            android:id="@+id/voice_length"
+		            android:layout_width="wrap_content"
+		        	android:layout_height="wrap_content"
+		        	android:layout_centerInParent="true"
+		        	android:textColor="@color/white"
+		        	android:text="4"
+           		 />
+   		 	</RelativeLayout>
+        </TableRow>
+    </TableLayout>
+
+    <com.robin.fruitseller.view.RingView
+        android:id="@+id/ring"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android_custom:style="FILL"
+        android_custom:roundColor="@color/white"
+        android_custom:roundProgressColor="@color/green"
+        android_custom:textColor="@color/white"
+        android_custom:roundWidth="5dip"
+        android_custom:textSize="18sp" />
+
+</RelativeLayout>

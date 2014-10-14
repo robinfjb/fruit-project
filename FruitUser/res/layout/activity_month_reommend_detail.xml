@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/view_title_month_recommend_detail"
+        android:focusable="true" />
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="match_parent"
+        android:layout_height="226dp"
+        android:scaleType="fitCenter"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本月推荐" 
+            android:textSize="16sp"
+            android:textColor="@color/gray"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="杨梅" 
+            android:textSize="16sp"
+            android:textColor="@color/gray"/>
+        
+        <ScrollView 
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+            android:id="@+id/content"
+			android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="呵呵呵呵呵呵恶化呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵额呵呵呵" 
+            android:textSize="14sp"
+            android:textColor="@color/gray"/>
+        </ScrollView>
+        
+        
+    </LinearLayout>
+
+</LinearLayout>

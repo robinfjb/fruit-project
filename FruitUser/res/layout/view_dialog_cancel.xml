@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="250dp"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    
+    <ImageView 
+        android:id="@+id/close"
+        android:layout_width="35dp"
+    	android:layout_height="35dp"
+    	android:src="@drawable/layer_close"
+    	android:layout_alignParentLeft="true"
+    	android:layout_alignParentTop="true"
+    	android:layout_marginLeft="5dp"
+    	android:layout_marginTop="5dp"
+        />
+    
+    <TextView 
+        android:id="@+id/txt1"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/close"
+    	android:textColor="@color/gray"
+    	android:text="商家已取消订单"
+    	android:layout_centerHorizontal="true"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:textColor="@color/gray"
+    	android:text="是否重新发起订单？"
+    	android:layout_below="@id/txt1"
+    	android:layout_centerHorizontal="true"
+        />
+    
+    <Button 
+        android:id="@+id/resend_btn"
+        android:layout_width="match_parent"
+    	android:layout_height="40dp"
+    	android:background="@drawable/bg_button_green"
+    	android:layout_marginLeft="20dp"
+    	android:layout_marginRight="20dp"
+    	android:layout_marginBottom="30dp"
+    	android:layout_alignParentBottom="true"
+    	android:text="确定"
+    	android:textColor="@color/white"
+        />
+
+</RelativeLayout>

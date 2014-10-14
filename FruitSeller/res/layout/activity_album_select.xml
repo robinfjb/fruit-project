@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout 
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white" >
+        <Button
+	        android:id="@+id/ok_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:text="确定" />
+        <HorizontalScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/ok_button"
+            android:scrollbars="none" >
+            <LinearLayout
+	              android:id="@+id/selected_image_layout"
+	              android:layout_width="wrap_content"
+	              android:layout_height="match_parent"
+	              android:gravity="center_vertical"
+	              android:orientation="horizontal">
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:layout_above="@id/bottom">
+        <GridView
+            android:id="@+id/grid_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="2dp"
+            android:horizontalSpacing="2dp"
+            android:listSelector="@null"
+            android:numColumns="3"
+            android:verticalSpacing="2dp"
+            android:background="@color/black"/>
+    </RelativeLayout>
+</RelativeLayout>
+
+

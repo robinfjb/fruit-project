@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- <color name="text_white_shadow_color">#ff5a9487</color> -->
+    <color name="background">#fff4f4f4</color>
+    <color name="background_alpha">#ccf4f4f4</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="red">#ffff0000</color>
+    <color name="gray">#ff333333</color>
+    <color name="red_line">#ffc80019</color>
+    <color name="gray_line">#ff666666</color>
+    <color name="gray_edit">#ffcccccc</color>
+    <color name="gray_hint">#ff999999</color>
+    <color name="red_btn">#ffc80019</color>
+    <color name="red_txt">#ffc70019</color>
+    <color name="green_btn">#ff8ac642</color>
+    <color name="green_dark">#ff669933</color>
+    <color name="green_light">#ffbfe0a8</color>
+    <color name="dash_line">#ffeaeaea</color>
+    <color name="green_txt">#ff78be46</color>
+    <color name="tools_box_bg">#ff333332</color>
+    <color name="text_white_shadow_color">#ff5a9487</color>
+    <color name="light_gray">#ffefefef</color>
+    <color name="bg_tab_text_selected">#ff25aa50</color>
+    <color name="bg_tab_text">#ff636363</color>
+    <color name="text_color_grey_light">#ff777777</color>
+    
+    <color name="blue_overlay">#660D92DD</color>
+	<color name="none_color">#00000000</color>
+</resources>

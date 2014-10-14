@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"
+    android:background="@color/background"
+    android:gravity="center_vertical"
+    android:padding="0.0px" >
+
+    <TextView
+        android:id="@+id/ivTitleName"
+        style="@style/Title_Font"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="我的周边"
+        android:textColor="@color/gray" />
+
+    <RelativeLayout
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dip"
+        android:gravity="left" >
+
+        <ImageView
+            android:id="@+id/ivTitleBtnLeft"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:includeFontPadding="false"
+            android:src="@drawable/btn_meun" />
+        
+        <ImageView
+            android:id="@+id/titleRedPoint"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:includeFontPadding="false"
+            android:visibility="gone"
+            android:src="@drawable/reddot" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivTitleBtnRight"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip"
+        android:gravity="right"
+        android:includeFontPadding="false"
+        android:src="@drawable/btn_login" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/red_line" />
+
+</RelativeLayout>

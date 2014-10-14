@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">水果1号</string>
+
+    <string name="share_title">水果1号</string>
+    <string name="share_content">对我好不好，就看你点不点！哇！快用手机给我送水果吧！</string>
+</resources>
